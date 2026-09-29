@@ -42,6 +42,10 @@ function walk(dir) {
 rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
 cpSync(join(root, 'assets'), join(out, 'assets'), { recursive: true });
+// Prototyp: komplette Sperre für Suchmaschinen (entfällt im Theme)
+cpSync(join(root, 'assets', 'robots-prototyp.txt'), join(out, 'robots.txt'));
+// GitHub Pages: keine Jekyll-Verarbeitung
+writeFileSync(join(out, '.nojekyll'), '');
 
 const pagesDir = join(src, 'pages');
 for (const file of walk(pagesDir).filter((f) => f.endsWith('.html'))) {

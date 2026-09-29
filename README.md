@@ -13,7 +13,19 @@ Statischer Prototyp (HTML/CSS/Vanilla-JS) der neuen Unterseite zur Lungenkrebs-F
 | `/lungenkrebsscreening/zuweiser/` | Zuweiserbereich inkl. Checkliste (Druck + PDF), Swimlane, Befundinhalte, Rechner (erweitert) |
 | `/` | Prototyp-Übersicht, Teaser für Startseite und `/ct-diagnostik`, Leitbild-Varianten |
 
-## Schnellstart
+## Prototyp ansehen
+
+**Online (GitHub Pages):** https://jd5vhjp86f-code.github.io/ldct/ – sobald Pages aktiviert ist (einmalig: *Settings → Pages → Build and deployment → Source: „GitHub Actions“*). Danach veröffentlicht der Workflow `Prototyp` jeden Push automatisch.
+
+> Achtung: Eine Pages-Seite ist öffentlich erreichbar, auch wenn das Repository privat ist (außer bei GitHub Enterprise mit privater Pages-Sichtbarkeit). Der Prototyp ist per `noindex` und `robots.txt` für Suchmaschinen gesperrt und trägt einen Prototyp-Hinweis, enthält aber noch nicht freigegebene medizinische Inhalte. Den Link nur gezielt weitergeben.
+
+**Lokal ohne Node** (der Rechner braucht einen Webserver, per Doppelklick auf die HTML-Datei funktioniert er nicht):
+
+```bash
+python3 -m http.server 8080 -d public   # dann http://localhost:8080 öffnen
+```
+
+## Schnellstart für Entwicklung
 
 ```bash
 npm test                 # Unit-Tests der Rechenlogik (node --test, keine Abhängigkeiten)
