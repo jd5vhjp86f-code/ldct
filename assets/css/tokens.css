@@ -1,36 +1,37 @@
 /*
  * Design-Tokens – Unterseite Lungenkrebsscreening
  *
- * STATUS: VORLÄUFIG. Die Farbwerte sind Schätzwerte aus dem Praxis-Flyer.
- * Der Abgleich gegen /themes/ohjunge/assets/ (Theme-CSS, logo.svg,
- * logo-icon.svg) steht aus, weil die Live-Website aus der Build-Umgebung
- * nicht erreichbar war. Vor der Übernahme ins Theme hier – und nur hier –
- * die exakten Werte eintragen. Siehe docs/UEBERGABE.md, Abschnitt „Tokens“.
+ * STATUS: Markenfarben am Praxis-Flyer gemessen (Pixelwerte der Druckvorlage,
+ * 29.09.2026). Der Abgleich gegen /themes/ohjunge/assets/ (Theme-CSS,
+ * logo.svg, logo-icon.svg) steht noch aus, weil die Live-Website aus der
+ * Build-Umgebung nicht erreichbar war. Abweichungen nur hier eintragen.
+ * Siehe docs/UEBERGABE.md, Abschnitt „Tokens“.
  */
 :root {
-  /* Markenfarben (Flyer-Schätzwerte, abzugleichen) */
-  --lks-blue: #0a78a8;
-  --lks-petrol: #00898a;
-  --lks-sage: #4ba896;
-  --lks-lightblue: #6aaed6;
-  --lks-taupe: #6e625d;
-  --lks-sand: #eceae4;
+  /* Markenfarben (am Flyer gemessen) */
+  --lks-blue: #007ba9;      /* Logo, Hero-Fläche, „Hamburg“, Punkt 1 */
+  --lks-petrol: #008b92;    /* Kontaktbox, Diagnostik-Kreis */
+  --lks-sage: #45aa9a;      /* rechter Lungenflügel, Weiterbehandlung */
+  --lks-lightblue: #68b1d4; /* linker Lungenflügel */
+  --lks-taupe: #5f524a;     /* Headlines, fette Auszeichnungen */
+  --lks-sand: #ebeae5;      /* Infoboxen, Prozesskette */
+  --lks-grey: #999592;      /* Unterzeile im Logo („Stephansplatz · Dammtorwall“) – nur dekorativ, 2,9:1 */
   --lks-white: #fff;
 
   /* Kontrastvarianten (WCAG 2.1 AA; Werte prüfen mit `node tools/contrast.mjs`).
-     Weiß auf --lks-sage (2,9:1) und auf --lks-lightblue (2,4:1) ist für Text NICHT zulässig,
-     Weiß auf --lks-petrol (4,3:1) nur für große Schrift – daher --lks-petrol-strong. */
+     Weiß auf --lks-sage (2,8:1) und auf --lks-lightblue (2,4:1) ist für Text NICHT zulässig,
+     Weiß auf --lks-petrol (4,1:1) nur für große Schrift – daher --lks-petrol-strong. */
   --lks-blue-text: #08658e;     /* 6,4:1 auf Weiß, 5,4:1 auf Sand */
-  --lks-petrol-text: #006d6e;   /* 6,2:1 auf Weiß, 5,1:1 auf Sand */
+  --lks-petrol-text: #007478;   /* Flyer-Kicker #00777a minimal abgedunkelt: 5,6:1 auf Weiß, 4,6:1 auf Sand */
   --lks-sage-text: #2d6f62;     /* 5,9:1 auf Weiß */
   --lks-petrol-strong: #007273; /* Kontaktbox-Hintergrund, Weiß darauf 5,8:1 */
-  /* --lks-taupe als Textfarbe: 5,9:1 auf Weiß, 4,9:1 auf Sand; Weiß auf --lks-blue: 4,9:1 */
+  /* --lks-taupe als Textfarbe: 7,5:1 auf Weiß, 6,2:1 auf Sand; Weiß auf --lks-blue: 4,8:1 */
 
-  --lks-ink: #2a2421;           /* Text/Icons auf Salbei (5,4:1) und Hellblau (6,3:1) */
+  --lks-ink: #2a2421;           /* Text/Icons auf Salbei (5,4:1) und Hellblau (6,4:1) */
 
   --lks-ring: rgba(255, 255, 255, 0.35);
   --lks-line: #cfcac1;
-  --lks-focus: #0a78a8;
+  --lks-focus: #007ba9;
 
   /* Typografie: Schrift des Themes übernehmen (var(--theme-font) wird bei der
      Integration auf die dort geladene Schrift gesetzt; hier nur Fallback-Stack). */

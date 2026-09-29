@@ -55,11 +55,11 @@ for (const file of walk(pagesDir).filter((f) => f.endsWith('.html'))) {
 // Eigenständige SVG-Dateien der Leitbild-Varianten (für Druck, Agentur, CMS-Medien)
 const svgDir = join(out, 'assets', 'svg');
 mkdirSync(svgDir, { recursive: true });
-const standaloneCss = `<style>.lks-lung__left{fill:#6aaed6}.lks-lung__right{fill:#4ba896}.lks-lung__rings{color:rgba(255,255,255,.35)}</style>`;
+const standaloneCss = `<style>.lks-lung__left{fill:#68b1d4}.lks-lung__right{fill:#45aa9a}.lks-lung__rings{color:rgba(255,255,255,.35)}</style>`;
 for (const [name, variant] of [['lung-hero', 'hero'], ['lung-small', 'small'], ['lung-mono', 'mono']]) {
   let svg = render(`<!-- @include ${name} id="file" label="Lungen-Symbol der Radiologie Dammtor" -->`);
   svg = svg.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
-  if (variant === 'hero') svg = svg.replace(/(<svg[^>]*>)/, `$1<rect width="240" height="240" fill="#0a78a8"/>`);
+  if (variant === 'hero') svg = svg.replace(/(<svg[^>]*>)/, `$1<rect width="240" height="240" fill="#007ba9"/>`);
   if (variant !== 'mono') svg = svg.replace(/(<svg[^>]*>)/, `$1${standaloneCss}`);
   writeFileSync(join(svgDir, `${name}.svg`), `${svg}\n`);
   console.log('SVG    ', `assets/svg/${name}.svg`);

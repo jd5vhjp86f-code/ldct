@@ -8,12 +8,12 @@ Weder auf das Theme-Repository noch auf die Live-Website bestand Zugriff (die Ne
 
 `assets/css/tokens.css` ist die **einzige** Stelle mit Farb- und Typografiewerten. Vor der Integration:
 
-1. Die Markenfarben aus `/themes/ohjunge/assets/` (Theme-CSS) sowie aus `logo.svg` und `logo-icon.svg` auslesen und `--lks-blue`, `--lks-petrol`, `--lks-sage`, `--lks-lightblue`, `--lks-taupe` und `--lks-sand` ersetzen.
+1. Die Markenfarben sind am Praxis-Flyer gemessen (siehe `RECHERCHE.md` Abschnitt 11). Mit `/themes/ohjunge/assets/` (Theme-CSS) sowie `logo.svg` und `logo-icon.svg` abgleichen und nur bei Abweichungen `--lks-blue`, `--lks-petrol`, `--lks-sage`, `--lks-lightblue`, `--lks-taupe` und `--lks-sand` ersetzen.
 2. `--theme-font` auf die im Theme geladene Schrift setzen oder `--lks-font` direkt anpassen. Es wird **keine** neue Schrift nachgeladen.
 3. Die Kontrastvarianten (`--lks-*-text`, `--lks-petrol-strong`, `--lks-ink`) mit `node tools/contrast.mjs` neu prüfen. Alle Textkombinationen brauchen mindestens 4,5:1.
 4. Optional können die Aufzählungspunkte auf `active-dot.svg` des Themes umgestellt werden (`.lks-dots > li::before`).
 
-Bekannte Kontrastgrenzen der Flyer-Palette: Weiß auf Salbei (2,9:1) und Weiß auf Hellblau (2,4:1) ist für Text **nicht** zulässig. Weiß auf Petrol (4,3:1) reicht nur für große Schrift, daher gibt es für die Kontaktbox `--lks-petrol-strong`.
+Bekannte Kontrastgrenzen der Flyer-Palette: Weiß auf Salbei (2,8:1) und Weiß auf Hellblau (2,4:1) ist für Text **nicht** zulässig. Weiß auf Petrol (4,1:1) reicht nur für große Schrift, daher gibt es für die Kontaktbox `--lks-petrol-strong`. Der Flyer setzt Weiß auf Petrol auch in kleiner Schrift ein – im Druck unkritischer, im Web nicht AA-konform.
 
 ## 3. Überführung in OctoberCMS
 
@@ -65,4 +65,4 @@ Diese Punkte weichen vom ursprünglichen Plan ab oder präzisieren ihn. Sie sind
 1. **Alter aus dem Geburtsjahr:** Liegt das Alter an einer Grenze (50 bzw. 75/76), ist das Alterskriterium „nicht beurteilbar“. Das Gesamtergebnis lautet dann „Einzelne Angaben lassen sich rechnerisch nicht eindeutig beurteilen …“.
 2. **Aktiv Rauchende:** Das Kriterium „Rauchstopp“ hat den Status „entfällt“ und zählt als erfüllt, daher „4/4“ in der Kurzzusammenfassung.
 3. **Zuweiser-Rechner:** eigene Ergebnistexte (`RESULT_TEXT_CLINICIAN` in `packyears.js`) ohne Patientenansprache. Die Patiententexte aus dem Plan gelten nur für den einfachen Modus.
-4. **Kontaktbox:** Hintergrund `--lks-petrol-strong` (`#007273`, Weiß darauf 5,8:1), weil Weiß auf dem Flyer-Petrol nur 4,3:1 erreicht. Beim Token-Abgleich mit dem Theme einen gleichwertig dunklen Petrol-Ton festlegen und mit `node tools/contrast.mjs` prüfen (mindestens 4,5:1).
+4. **Kontaktbox:** Hintergrund `--lks-petrol-strong` (`#007273`, Weiß darauf 5,8:1), weil Weiß auf dem Flyer-Petrol nur 4,1:1 erreicht. Beim Token-Abgleich mit dem Theme einen gleichwertig dunklen Petrol-Ton festlegen und mit `node tools/contrast.mjs` prüfen (mindestens 4,5:1).

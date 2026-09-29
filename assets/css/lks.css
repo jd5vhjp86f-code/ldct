@@ -526,3 +526,6 @@ body.lks { margin: 0; background: var(--lks-white); }
   .lks-fill p { display: flex; gap: 8pt; margin: 0 0 16pt; max-width: none; }
   .lks-fill span { flex: 1; border-bottom: 1px solid #000; }
 }
+.lks-swim-svg__edge-label text { font-family: var(--lks-font); font-size: 12px; font-style: italic; fill: var(--lks-taupe); }
+.lks-grid-2 > * { min-width: 0; }
+@media (max-width: 30rem) { .lks-table th, .lks-table td { padding-inline: 0.3rem; } }

@@ -20,7 +20,7 @@ Stand: 29.09.2026 · Prüfumgebung: lokaler Build (`public/`), `http-server` ohn
 |---|---|---|---|---|---|
 | /lungenkrebsscreening/ | mobil | 100 | 100 | 100 | 100 |
 | /lungenkrebsscreening/ | Desktop | 100 | 100 | 100 | 100 |
-| /lungenkrebsscreening/patienten/ | mobil | 100 | 100 | 100 | 100 |
+| /lungenkrebsscreening/patienten/ | mobil | 99 | 100 | 100 | 100 |
 | /lungenkrebsscreening/patienten/ | Desktop | 100 | 100 | 100 | 100 |
 | /lungenkrebsscreening/zuweiser/ | mobil | 99 | 100 | 100 | 100 |
 | /lungenkrebsscreening/zuweiser/ | Desktop | 100 | 100 | 100 | 100 |
@@ -29,7 +29,7 @@ Einzelhinweise ohne Einfluss auf das Ziel: Textkompression (gzip/brotli) und Min
 
 ## axe-core (WCAG 2.0/2.1 A + AA + Best Practices)
 
-Geprüft wurden alle vier Seiten bei 1280 px und bei 360 px, mit ausgefülltem Rechner (Ergebniszustand) und geöffneten FAQ: **0 Verstöße.**
+Nach der Recherche-Überarbeitung erneut geprüft. Geprüft wurden alle vier Seiten bei 1280 px und bei 360 px, mit ausgefülltem Rechner (Ergebniszustand) und geöffneten FAQ: **0 Verstöße.**
 
 ## Mobil 360 px
 

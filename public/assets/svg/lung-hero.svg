@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="lks-lung lks-lung--hero" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Lungen-Symbol der Radiologie Dammtor"><style>.lks-lung__left{fill:#6aaed6}.lks-lung__right{fill:#4ba896}.lks-lung__rings{color:rgba(255,255,255,.35)}</style><rect width="240" height="240" fill="#0a78a8"/>
+<svg xmlns="http://www.w3.org/2000/svg" class="lks-lung lks-lung--hero" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Lungen-Symbol der Radiologie Dammtor"><style>.lks-lung__left{fill:#68b1d4}.lks-lung__right{fill:#45aa9a}.lks-lung__rings{color:rgba(255,255,255,.35)}</style><rect width="240" height="240" fill="#007ba9"/>
   <g class="lks-lung__rings" fill="none" stroke="currentColor" stroke-width="1">
     <circle class="lks-lung__ring" cx="160" cy="170" r="34"/>
     <circle class="lks-lung__ring" cx="160" cy="170" r="62"/>

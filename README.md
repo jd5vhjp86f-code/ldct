@@ -2,7 +2,7 @@
 
 Statischer Prototyp (HTML/CSS/Vanilla-JS) der neuen Unterseite zur Lungenkrebs-Früherkennung mit Niedrigdosis-CT (LuKrFrühErkV / KFE-RL), vorgesehen zur Übergabe an die Theme-Agentur (OctoberCMS, Theme `ohjunge`).
 
-> **Status:** Prototyp, **nicht zur Veröffentlichung freigegeben.** Orange markierte Stellen („PRÜFEN“) warten noch auf die fachliche bzw. rechtliche Freigabe, siehe [`docs/PRUEFEN.md`](docs/PRUEFEN.md). Die Design-Tokens sind Schätzwerte aus dem Flyer, der Abgleich mit dem Live-Theme steht noch aus.
+> **Status:** Prototyp, **nicht zur Veröffentlichung freigegeben.** Orange markierte Stellen („PRÜFEN“) warten noch auf die fachliche bzw. rechtliche Freigabe, siehe [`docs/PRUEFEN.md`](docs/PRUEFEN.md). Die Markenfarben sind am Flyer gemessen, der Abgleich mit dem Live-Theme und der Website-Schrift steht noch aus.
 
 ## Seiten
 
@@ -45,3 +45,4 @@ Weitere Dokumentation:
 - [`docs/UEBERGABE.md`](docs/UEBERGABE.md): Integration ins OctoberCMS-Theme
 - [`docs/QA.md`](docs/QA.md): QA-Protokoll
 - [`docs/PRUEFEN.md`](docs/PRUEFEN.md): Freigabeliste und Nebenbefunde der bestehenden Website
+- [`docs/RECHERCHE.md`](docs/RECHERCHE.md): Rechercheergebnisse mit Quellen, Befund zur Flyer-PDF
