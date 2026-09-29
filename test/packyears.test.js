@@ -7,6 +7,8 @@ import {
   formatPackYears,
   buildSummary,
   STATUS,
+  RESULT_TEXT,
+  RESULT_TEXT_CLINICIAN,
 } from '../assets/js/packyears.js';
 
 const YEAR = 2026;
@@ -233,5 +235,20 @@ describe('validateInput – einfacher Modus', () => {
     const e = validateInput(simple({ age: undefined, status: undefined }));
     assert.ok(e.age);
     assert.ok(e.status);
+  });
+});
+
+describe('Ergebnistexte', () => {
+  test('Patiententexte: keine Anspruchs- oder Entwarnungsformulierung', () => {
+    for (const t of Object.values(RESULT_TEXT)) {
+      assert.doesNotMatch(t, /Anspruch|keine Untersuchung/);
+    }
+  });
+
+  test('Zuweisertexte: gleiche Ergebnisarten, ohne Patientenansprache', () => {
+    assert.deepEqual(Object.keys(RESULT_TEXT_CLINICIAN).sort(), Object.keys(RESULT_TEXT).sort());
+    for (const t of Object.values(RESULT_TEXT_CLINICIAN)) {
+      assert.doesNotMatch(t, /\b(Ihre?|Sie)\b/);
+    }
   });
 });

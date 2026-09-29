@@ -57,3 +57,12 @@ Eigenständige Dateien liegen nach dem Build in `public/assets/svg/`. Der Zielpu
 - **Aktiv Rauchende:** Das Kriterium „Rauchstopp“ bekommt den Status „entfällt“ und zählt als erfüllt (daher „4/4“ in der Zusammenfassung).
 - **Packungsjahre** werden auf dem angezeigten, auf eine Nachkommastelle gerundeten Wert mit der Schwelle von 15 verglichen, damit Anzeige und Bewertung übereinstimmen.
 - **Genauigkeit im einfachen Modus:** Die Rauchdauer wird auf ganze Jahre gerechnet (Jahr des Rauchstopps minus Geburtsjahr minus Alter bei Rauchbeginn) und kann daher um ±1 Jahr abweichen. Das reicht für eine Orientierung, das Ergebnis wird ausdrücklich nicht als Anspruch formuliert.
+
+## 6. Freigegebene Entscheidungen (29.09.2026, Dr. Benedikt Rosenbaum)
+
+Diese Punkte weichen vom ursprünglichen Plan ab oder präzisieren ihn. Sie sind freigegeben und bei der Integration beizubehalten:
+
+1. **Alter aus dem Geburtsjahr:** Liegt das Alter an einer Grenze (50 bzw. 75/76), ist das Alterskriterium „nicht beurteilbar“. Das Gesamtergebnis lautet dann „Einzelne Angaben lassen sich rechnerisch nicht eindeutig beurteilen …“.
+2. **Aktiv Rauchende:** Das Kriterium „Rauchstopp“ hat den Status „entfällt“ und zählt als erfüllt, daher „4/4“ in der Kurzzusammenfassung.
+3. **Zuweiser-Rechner:** eigene Ergebnistexte (`RESULT_TEXT_CLINICIAN` in `packyears.js`) ohne Patientenansprache. Die Patiententexte aus dem Plan gelten nur für den einfachen Modus.
+4. **Kontaktbox:** Hintergrund `--lks-petrol-strong` (`#007273`, Weiß darauf 5,8:1), weil Weiß auf dem Flyer-Petrol nur 4,3:1 erreicht. Beim Token-Abgleich mit dem Theme einen gleichwertig dunklen Petrol-Ton festlegen und mit `node tools/contrast.mjs` prüfen (mindestens 4,5:1).

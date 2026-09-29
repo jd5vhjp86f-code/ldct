@@ -4,13 +4,14 @@ Stand: 29.09.2026 · Prüfumgebung: lokaler Build (`public/`), `http-server` ohn
 
 ## Unit-Tests (`npm test`)
 
-31 von 31 Tests bestanden. Abgedeckt sind:
+33 von 33 Tests bestanden. Abgedeckt sind:
 
 - 10 × 30 = 15,0 PY · 20 × 25 = 25,0 PY · 40 × 10 = 20,0 PY · Phasen 10 J. à 20 + 15 J. à 10 = 17,5 PY
 - Altersgrenzen 49 / 50 / 75 / 76, Geburtsjahr an der Grenze → „nicht beurteilbar“
 - Rauchstopp vor 9 Jahren → erfüllt, vor genau 10 Jahren → nicht erfüllt, aktiv Rauchende → „entfällt“
 - Pausen: 30 J. Zeitraum − 5 J. Pause = 25 J.; Rauchdauer 24 J. → nicht erfüllt; Schwelle 14,9 / 15,0 PY
 - erweiterter Modus: Pausen aus Phasenlücken, Rauchstopp = Ende der letzten Phase, Kurzzusammenfassung im Beispielformat
+- Ergebnistexte: keine Anspruchs-/Entwarnungsformulierung (Patienten), keine Patientenansprache (Zuweiser)
 - Validierung: Rauchbeginn vor aktuellem Alter, Rauchstopp nicht in der Zukunft und nicht vor dem Rauchbeginn, Zigaretten pro Tag 1–100, Pausen, überlappende Phasen
 
 ## Lighthouse (Ziel: ≥ 90 in allen Kategorien)
