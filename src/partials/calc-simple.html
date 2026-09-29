@@ -1,0 +1,37 @@
+<!-- @include calc-noscript -->
+<div class="lks-calc">
+  <form class="lks-calc__form" data-lks-calculator="simple" novalidate aria-label="Packungsjahre-Rechner">
+    <!-- @include calc-age-status id="{{id}}" ageLegend="Ihr Alter" statusLegend="Rauchen Sie aktuell?" current="Ja, ich rauche aktuell" former="Nein, ich habe aufgehört" -->
+    <div class="lks-row">
+      <div class="lks-field">
+        <label for="{{id}}-startAge">Alter bei Rauchbeginn</label>
+        <input id="{{id}}-startAge" name="startAge" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-startAge-err">
+        <p class="lks-field__error" id="{{id}}-startAge-err" data-error-for="startAge"></p>
+      </div>
+      <div class="lks-field" data-show-if="status=former" hidden>
+        <label for="{{id}}-quitYear">Jahr des Rauchstopps</label>
+        <input id="{{id}}-quitYear" name="quitYear" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-quitYear-err">
+        <p class="lks-field__error" id="{{id}}-quitYear-err" data-error-for="quitYear"></p>
+      </div>
+    </div>
+    <div class="lks-field">
+      <label for="{{id}}-cig">Zigaretten pro Tag (Durchschnitt)</label>
+      <input id="{{id}}-cig" name="cigarettesPerDay" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-cig-hint {{id}}-cig-err">
+      <p class="lks-field__hint" id="{{id}}-cig-hint">Selbstgedrehte Zigaretten zählen mit. Eine Packung entspricht 20 Zigaretten.</p>
+      <p class="lks-field__error" id="{{id}}-cig-err" data-error-for="cigarettesPerDay"></p>
+    </div>
+    <div class="lks-field">
+      <label for="{{id}}-pause">Rauchpausen insgesamt in Jahren <span class="lks-small">(optional)</span></label>
+      <input id="{{id}}-pause" name="pauseYears" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-pause-hint {{id}}-pause-err">
+      <p class="lks-field__hint" id="{{id}}-pause-hint">Zeiten, in denen Sie zwischendurch nicht geraucht haben.</p>
+      <p class="lks-field__error" id="{{id}}-pause-err" data-error-for="pauseYears"></p>
+    </div>
+    <div class="lks-check">
+      <input id="{{id}}-tobacco" name="otherTobacco" type="checkbox">
+      <label for="{{id}}-tobacco">Ich rauche oder rauchte auch Zigarren, Zigarillos, Pfeife, E-Zigaretten oder Tabakerhitzer.</label>
+    </div>
+    <div><button type="submit" class="lks-btn">Ergebnis anzeigen</button></div>
+  </form>
+  <!-- @include calc-result id="{{id}}" heading="Ihr Ergebnis zur Orientierung" disclaimer="Der Rechner ersetzt keine ärztliche Beratung. Ob Sie am Programm teilnehmen können, klärt Ihre Arztpraxis im Beratungsgespräch." -->
+  <!-- @include calc-privacy -->
+</div>

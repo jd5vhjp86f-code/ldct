@@ -1,0 +1,22 @@
+<div class="lks-calc__result" data-state="empty" tabindex="-1" role="region" aria-labelledby="{{id}}-result-h">
+  <h3 class="lks-h3" id="{{id}}-result-h" style="margin-top:0">{{heading}}</h3>
+  <dl class="lks-figure">
+    <div><dt>Packungsjahre</dt><dd data-out="packYears">–</dd></div>
+    <div><dt>Rauchdauer</dt><dd data-out="years">–</dd></div>
+  </dl>
+  <div class="lks-bar">
+    <div class="lks-bar__track" role="meter" aria-label="Packungsjahre im Verhältnis zur Programmschwelle" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0">
+      <div class="lks-bar__fill"></div>
+    </div>
+    <div class="lks-bar__mark" style="left:50%" aria-hidden="true"><span>15 PY</span></div>
+  </div>
+  <p class="lks-calc__message">Bitte füllen Sie alle Pflichtfelder aus. Das Ergebnis erscheint dann hier.</p>
+  <div class="lks-calc__details">
+    <h4 class="lks-visually-hidden">Kriterien im Einzelnen</h4>
+    <ul class="lks-criteria"></ul>
+  </div>
+  <p class="lks-note" data-out="tobacco" hidden></p>
+  {{extra}}
+  <p class="lks-small" style="margin:0">{{disclaimer}}</p>
+  <p class="lks-visually-hidden" aria-live="polite" data-out="live"></p>
+</div>

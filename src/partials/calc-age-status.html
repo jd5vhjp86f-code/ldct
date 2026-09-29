@@ -1,0 +1,26 @@
+<fieldset>
+  <legend>{{ageLegend}}</legend>
+  <div class="lks-choice">
+    <label><input type="radio" name="ageMode" value="age" checked> Alter angeben</label>
+    <label><input type="radio" name="ageMode" value="birthYear"> Geburtsjahr angeben</label>
+  </div>
+  <div class="lks-field" data-show-if="ageMode=age">
+    <label for="{{id}}-age">Alter in Jahren</label>
+    <input id="{{id}}-age" name="age" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-age-err">
+    <p class="lks-field__error" id="{{id}}-age-err" data-error-for="age"></p>
+  </div>
+  <div class="lks-field" data-show-if="ageMode=birthYear" hidden>
+    <label for="{{id}}-birthYear">Geburtsjahr</label>
+    <input id="{{id}}-birthYear" name="birthYear" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-birthYear-hint {{id}}-birthYear-err">
+    <p class="lks-field__hint" id="{{id}}-birthYear-hint">Aus dem Geburtsjahr lässt sich das Alter nur auf ein Jahr genau bestimmen.</p>
+    <p class="lks-field__error" id="{{id}}-birthYear-err" data-error-for="birthYear"></p>
+  </div>
+</fieldset>
+<fieldset aria-describedby="{{id}}-status-err">
+  <legend>{{statusLegend}}</legend>
+  <div class="lks-choice">
+    <label><input type="radio" name="status" value="current"> {{current}}</label>
+    <label><input type="radio" name="status" value="former"> {{former}}</label>
+  </div>
+  <p class="lks-field__error" id="{{id}}-status-err" data-error-for="status"></p>
+</fieldset>

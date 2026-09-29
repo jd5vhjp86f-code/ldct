@@ -1,0 +1,61 @@
+/*
+ * Design-Tokens – Unterseite Lungenkrebsscreening
+ *
+ * STATUS: VORLÄUFIG. Die Farbwerte sind Schätzwerte aus dem Praxis-Flyer.
+ * Der Abgleich gegen /themes/ohjunge/assets/ (Theme-CSS, logo.svg,
+ * logo-icon.svg) steht aus, weil die Live-Website aus der Build-Umgebung
+ * nicht erreichbar war. Vor der Übernahme ins Theme hier – und nur hier –
+ * die exakten Werte eintragen. Siehe docs/UEBERGABE.md, Abschnitt „Tokens“.
+ */
+:root {
+  /* Markenfarben (Flyer-Schätzwerte, abzugleichen) */
+  --lks-blue: #0a78a8;
+  --lks-petrol: #00898a;
+  --lks-sage: #4ba896;
+  --lks-lightblue: #6aaed6;
+  --lks-taupe: #6e625d;
+  --lks-sand: #eceae4;
+  --lks-white: #fff;
+
+  /* Kontrastvarianten (WCAG 2.1 AA; Werte prüfen mit `node tools/contrast.mjs`).
+     Weiß auf --lks-sage (2,9:1) und auf --lks-lightblue (2,4:1) ist für Text NICHT zulässig,
+     Weiß auf --lks-petrol (4,3:1) nur für große Schrift – daher --lks-petrol-strong. */
+  --lks-blue-text: #08658e;     /* 6,4:1 auf Weiß, 5,4:1 auf Sand */
+  --lks-petrol-text: #006d6e;   /* 6,2:1 auf Weiß, 5,1:1 auf Sand */
+  --lks-sage-text: #2d6f62;     /* 5,9:1 auf Weiß */
+  --lks-petrol-strong: #007273; /* Kontaktbox-Hintergrund, Weiß darauf 5,8:1 */
+  /* --lks-taupe als Textfarbe: 5,9:1 auf Weiß, 4,9:1 auf Sand; Weiß auf --lks-blue: 4,9:1 */
+
+  --lks-ink: #2a2421;           /* Text/Icons auf Salbei (5,4:1) und Hellblau (6,3:1) */
+
+  --lks-ring: rgba(255, 255, 255, 0.35);
+  --lks-line: #cfcac1;
+  --lks-focus: #0a78a8;
+
+  /* Typografie: Schrift des Themes übernehmen (var(--theme-font) wird bei der
+     Integration auf die dort geladene Schrift gesetzt; hier nur Fallback-Stack). */
+  --lks-font: var(--theme-font, "Helvetica Neue", Arial, "Nimbus Sans", "Liberation Sans", sans-serif);
+  --lks-fw-light: 300;
+  --lks-fw-regular: 400;
+  --lks-fw-bold: 700;
+  --lks-fs-kicker: 0.8125rem;
+  --lks-fs-body: 1.0625rem;
+  --lks-fs-small: 0.9375rem;
+  --lks-fs-h1: clamp(2rem, 1.2rem + 3.6vw, 3.5rem);
+  --lks-fs-h2: clamp(1.5rem, 1.1rem + 1.8vw, 2.25rem);
+  --lks-fs-h3: 1.125rem;
+  --lks-lh: 1.6;
+  --lks-tracking-caps: 0.06em;
+
+  /* Abstände und Formen */
+  --lks-space-1: 0.25rem;
+  --lks-space-2: 0.5rem;
+  --lks-space-3: 1rem;
+  --lks-space-4: 1.5rem;
+  --lks-space-5: 2.5rem;
+  --lks-space-6: 4rem;
+  --lks-radius: 4px;
+  --lks-maxw: 72rem;
+  --lks-gutter: 16px;
+  --lks-dot: 0.75rem;
+}

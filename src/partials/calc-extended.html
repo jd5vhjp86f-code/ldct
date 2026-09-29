@@ -1,0 +1,41 @@
+<!-- @include calc-noscript -->
+<div class="lks-calc">
+  <form class="lks-calc__form" data-lks-calculator="extended" novalidate aria-label="Packungsjahre-Rechner, erweiterter Modus">
+    <!-- @include calc-age-status id="{{id}}" ageLegend="Alter" statusLegend="Raucherstatus der Patientin/des Patienten" current="raucht aktuell" former="hat aufgehört" -->
+    <fieldset>
+      <legend>Rauchphasen</legend>
+      <p class="lks-field__hint" id="{{id}}-phases-hint">Je Phase Zeitraum (Kalenderjahre) und durchschnittlicher Konsum. Lücken zwischen Phasen gelten als Rauchpausen und zählen nicht zur Rauchdauer. Bei aktuell Rauchenden endet die letzte Phase im laufenden Jahr; bei ehemaligen gilt das Ende der letzten Phase als Rauchstopp.</p>
+      <div class="lks-phases"></div>
+      <p class="lks-field__error" data-error-for="phases"></p>
+      <div class="lks-actions"><button type="button" class="lks-btn lks-btn--ghost lks-btn--small" data-action="add-phase">+ Phase hinzufügen</button></div>
+      <template data-phase>
+        <fieldset class="lks-phase">
+          <legend>Phase</legend>
+          <div class="lks-field">
+            <label for="{{id}}-from">von (Jahr)</label>
+            <input data-id="{{id}}-from" data-f="fromYear" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-from-err">
+            <p class="lks-field__error" data-id="{{id}}-from-err" data-field="fromYear" data-error-for=""></p>
+          </div>
+          <div class="lks-field">
+            <label for="{{id}}-to">bis (Jahr)</label>
+            <input data-id="{{id}}-to" data-f="toYear" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-to-err">
+            <p class="lks-field__error" data-id="{{id}}-to-err" data-field="toYear" data-error-for=""></p>
+          </div>
+          <div class="lks-field">
+            <label for="{{id}}-cpd">Zig./Tag</label>
+            <input data-id="{{id}}-cpd" data-f="cigarettesPerDay" type="text" inputmode="numeric" autocomplete="off" aria-describedby="{{id}}-cpd-err">
+            <p class="lks-field__error" data-id="{{id}}-cpd-err" data-field="cigarettesPerDay" data-error-for=""></p>
+          </div>
+          <div><button type="button" class="lks-btn lks-btn--ghost lks-btn--small" data-action="remove-phase">Entfernen</button></div>
+        </fieldset>
+      </template>
+    </fieldset>
+    <div class="lks-check">
+      <input id="{{id}}-tobacco" name="otherTobacco" type="checkbox">
+      <label for="{{id}}-tobacco">Konsum weiterer Tabakprodukte (Zigarren, Zigarillos, Pfeife, E-Zigarette, Tabakerhitzer)</label>
+    </div>
+    <div><button type="submit" class="lks-btn">Auswerten</button></div>
+  </form>
+  <!-- @include calc-result id="{{id}}" heading="Auswertung" disclaimer="Rechnerische Orientierung anhand der Angaben. Die Prüfung der Teilnahmevoraussetzungen und des Eignungsprofils bleibt ärztliche Aufgabe." extra="<div class='lks-calc__copy'><h4 class='lks-h3' style='margin:0 0 .5rem'>Kurzzusammenfassung für die Dokumentation</h4><p class='lks-summary' data-out='summary'></p><button type='button' class='lks-btn lks-btn--small' data-action='copy' disabled>In Zwischenablage kopieren</button><span class='lks-copy-status' role='status' data-out='copyStatus'></span></div>" -->
+  <!-- @include calc-privacy -->
+</div>
