@@ -46,6 +46,8 @@ cpSync(join(root, 'assets'), join(out, 'assets'), { recursive: true });
 cpSync(join(root, 'assets', 'robots-prototyp.txt'), join(out, 'robots.txt'));
 // GitHub Pages: keine Jekyll-Verarbeitung
 writeFileSync(join(out, '.nojekyll'), '');
+// Eigene Domain für GitHub Pages (Prototyp)
+writeFileSync(join(out, 'CNAME'), 'ldct.rosenbaum.hamburg\n');
 
 const pagesDir = join(src, 'pages');
 for (const file of walk(pagesDir).filter((f) => f.endsWith('.html'))) {

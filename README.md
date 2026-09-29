@@ -15,7 +15,13 @@ Statischer Prototyp (HTML/CSS/Vanilla-JS) der neuen Unterseite zur Lungenkrebs-F
 
 ## Prototyp ansehen
 
-**Online (GitHub Pages):** https://jd5vhjp86f-code.github.io/ldct/ – sobald Pages aktiviert ist (einmalig: *Settings → Pages → Build and deployment → Source: „GitHub Actions“*). Danach veröffentlicht der Workflow `Prototyp` jeden Push automatisch.
+**Online:** https://ldct.rosenbaum.hamburg/ (GitHub Pages mit eigener Domain). Einrichtung einmalig:
+
+1. *Settings → Pages → Build and deployment → Source:* „GitHub Actions“
+2. *Settings → Pages → Custom domain:* `ldct.rosenbaum.hamburg` eintragen, nach erfolgreicher DNS-Prüfung „Enforce HTTPS“ aktivieren
+3. DNS (IONOS): `ldct` als CNAME auf `jd5vhjp86f-code.github.io`
+
+Der Workflow `Prototyp` veröffentlicht danach jeden Push auf den Standard-Branch automatisch. Alle Pfade sind relativ; der Prototyp läuft im Wurzelpfad der Domain ebenso wie unter einem Unterpfad. `public/CNAME` wird vom Build erzeugt. Bei Veröffentlichung über GitHub Actions ist aber die Einstellung unter *Custom domain* maßgeblich, die Datei allein genügt nicht.
 
 > Achtung: Eine Pages-Seite ist öffentlich erreichbar, auch wenn das Repository privat ist (außer bei GitHub Enterprise mit privater Pages-Sichtbarkeit). Der Prototyp ist per `noindex` und `robots.txt` für Suchmaschinen gesperrt und trägt einen Prototyp-Hinweis, enthält aber noch nicht freigegebene medizinische Inhalte. Den Link nur gezielt weitergeben.
 
