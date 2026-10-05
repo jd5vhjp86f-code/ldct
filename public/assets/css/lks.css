@@ -9,8 +9,10 @@
   font-size: var(--lks-fs-body);
   line-height: var(--lks-lh);
   color: var(--lks-taupe);
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  /* Keine automatische Silbentrennung (Browser trennen unterschiedlich und oft unschön).
+     Ausnahme: Fließtext auf schmalen Bildschirmen, siehe „Silbentrennung“ am Dateiende. */
+  hyphens: manual;
+  -webkit-hyphens: manual;
   overflow-wrap: break-word;
 }
 .lks *, .lks *::before, .lks *::after { box-sizing: border-box; }
@@ -581,3 +583,32 @@ body.lks { margin: 0; background: var(--lks-white); }
 .lks .lks-coop { max-width: none; }
 .lks-coop span { text-wrap: balance; hyphens: none; -webkit-hyphens: none; }
 @media (min-width: 52rem) { .lks-coop span { white-space: nowrap; } }
+
+/* ------------------------------------------------------------ Silbentrennung
+   Überschriften, Kicker, Labels, Buttons: nie automatisch trennen, ausgewogen umbrechen.
+   Fließtext: nur auf schmalen Bildschirmen und nur lange Wörter
+   (mind. 12 Zeichen, mind. 5 Zeichen vor und nach der Trennstelle). */
+.lks :is(h1, h2, h3, h4, summary, legend, label, th, dt, .lks-kicker, .lks-process__title,
+  .lks-contact__label, .lks-contact__value, .lks-claims, .lks-btn, .lks-legend, .lks-tile__more,
+  .lks-swim__lane, .lks-criteria__status, .lks-doc__meta, .lks-breadcrumb) {
+  hyphens: none;
+  -webkit-hyphens: none;
+}
+.lks :is(h1, h2, h3, h4, summary) { text-wrap: balance; }
+@media (max-width: 40rem) {
+  .lks :is(p, li, td, dd, address) {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 12 5 5;
+    -webkit-hyphenate-limit-before: 5;
+    -webkit-hyphenate-limit-after: 5;
+  }
+  /* Überschriften-artige Elemente innerhalb von Listen bleiben ungetrennt */
+  .lks :is(li, p) :is(strong, .lks-swim__lane) { hyphens: manual; -webkit-hyphens: manual; }
+}
+/* Dokumentkarten erst ab breiten Bildschirmen zweispaltig, damit Titel nicht gequetscht werden */
+@media (min-width: 64rem) { .lks-docs { grid-template-columns: 1fr; } }
+@media (min-width: 80rem) { .lks-docs { grid-template-columns: 1fr 1fr; } }
+/* Dokumenttitel: „Lungenkrebsscreening“ passt auch bei 320 px in eine Zeile */
+.lks-doc__body { container-type: inline-size; }
+.lks-doc__body .lks-h3 { font-size: min(var(--lks-fs-h3), 6.2cqi); }

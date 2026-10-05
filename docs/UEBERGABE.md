@@ -66,3 +66,11 @@ Diese Punkte weichen vom ursprünglichen Plan ab oder präzisieren ihn. Sie sind
 2. **Aktiv Rauchende:** Das Kriterium „Rauchstopp“ hat den Status „entfällt“ und zählt als erfüllt, daher „4/4“ in der Kurzzusammenfassung.
 3. **Zuweiser-Rechner:** eigene Ergebnistexte (`RESULT_TEXT_CLINICIAN` in `packyears.js`) ohne Patientenansprache. Die Patiententexte aus dem Plan gelten nur für den einfachen Modus.
 4. **Kontaktbox:** Hintergrund `--lks-petrol-strong` (`#007273`, Weiß darauf 5,8:1), weil Weiß auf dem Flyer-Petrol nur 4,1:1 erreicht. Beim Token-Abgleich mit dem Theme einen gleichwertig dunklen Petrol-Ton festlegen und mit `node tools/contrast.mjs` prüfen (mindestens 4,5:1).
+
+## 7. Silbentrennung (05.10.2026)
+
+- Keine automatische Silbentrennung in Überschriften, Kickern, Labels, Buttons und Navigation; Überschriften werden mit `text-wrap: balance` ausgewogen umbrochen.
+- Fließtext wird nur bis 640 px Breite automatisch getrennt, und nur bei Wörtern ab 12 Zeichen mit mindestens 5 Zeichen vor und nach der Trennstelle.
+- Bewusste Trennstellen sind als `&shy;` gesetzt (z. B. „Lungenkrebs&shy;früherkennung“ in der Abrechnungstabelle und in der Checkliste).
+- Lange Einzelwörter in Überschriften (Hero, Dokumenttitel) skalieren über Container-Query-Einheiten (`cqi`) mit der Spaltenbreite, statt getrennt zu werden.
+- Hinweis zum Testen: Chromium unter Linux bringt oft keine deutschen Trennmuster mit. Ob automatisch getrennt wird, deshalb auf Safari (macOS/iOS) und Firefox prüfen.
