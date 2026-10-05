@@ -1,0 +1,16 @@
+<article class="lks-doc" aria-labelledby="{{id}}-h">
+  <a class="lks-doc__thumb" href="{{base}}assets/downloads/{{file}}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+    <img src="{{base}}assets/img/{{img}}" alt="" width="{{w}}" height="{{h}}" loading="lazy" decoding="async">
+  </a>
+  <div class="lks-doc__body">
+    <span class="lks-kicker">{{kicker}}</span>
+    <h3 class="lks-h3" id="{{id}}-h">{{title}}</h3>
+    <p>{{text}}</p>
+    <p class="lks-doc__meta">{{meta}}</p>
+    {{extra}}
+    <div class="lks-actions">
+      <a class="lks-btn" href="{{base}}assets/downloads/{{file}}" download aria-describedby="{{id}}-h"><!-- @include icon-download --> PDF herunterladen</a>
+      <a class="lks-btn lks-btn--ghost" href="{{base}}assets/downloads/{{file}}" target="_blank" rel="noopener" aria-describedby="{{id}}-h">Im Browser öffnen<span class="lks-visually-hidden"> (neues Fenster)</span></a>
+    </div>
+  </div>
+</article>

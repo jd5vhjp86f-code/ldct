@@ -6,7 +6,7 @@ Stand: 29.09.2026. Die direkten Seitenabrufe (g-ba.de, kbv.de, bundesaerztekamme
 
 Die KFE-RL sieht die Zweitbefundung **nicht für jede Untersuchung** vor. Sie ist nur vorgeschrieben, wenn der Erstbefund **kontroll- oder abklärungsbedürftig** ist. Dann beurteilt eine zweite Radiologin oder ein zweiter Radiologe an einem auf Lungenkrebs spezialisierten Zentrum die Aufnahmen unabhängig. Erst- und Zweitbefunder legen das Ergebnis gemeinsam fest, bei abweichenden Befunden in einer Konsensuskonferenz. Bei abklärungsbedürftigem Befund berät zusätzlich der Erstbefunder die versicherte Person (GOP 01880).
 
-Die Formulierung „Doppelbefundung jeder Untersuchung“ ist daraus entfernt, überall steht jetzt der Ablauf nach der Richtlinie. **Falls die Radiologie Dammtor und das AK Harburg freiwillig alle Untersuchungen doppelt befunden, kann das wieder aufgenommen werden, muss dann aber als zusätzliche Leistung erkennbar sein.**
+Die Formulierung „Doppelbefundung jeder Untersuchung“ ist daraus entfernt, überall steht jetzt der Ablauf nach der Richtlinie. **Falls die Radiologie Dammtor und das Asklepios Klinikum Harburg freiwillig alle Untersuchungen doppelt befunden, kann das wieder aufgenommen werden, muss dann aber als zusätzliche Leistung erkennbar sein.**
 
 Quellen: [KV Sachsen, Informationen für Zuweiser (PDF)](https://www.kvsachsen.de/fileadmin/KV-Sachsen_Website/01_Praxen/Qualit%C3%A4t/Genehmigungspflichtige_Leistungen/Lungenkrebsfr%C3%BCherkennung__LDCT_/260415_Informationen_Zuweiser.pdf), [KV Hessen, Neu im EBM April 2026](https://www.kvhessen.de/abrechnung-ebm/neu-im-ebm/april2026-krebsfrueherkennung-bei-lungenkrebs), [KBV, Vergütung beschlossen (19.03.2026)](https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/03-19/verguetung-fuer-lungenkrebs-screening-beschlossen)
 
@@ -70,7 +70,7 @@ Der Link im Projektplan (`/downloads/39-261-7628/…`) führt zum **Beschluss** 
 
 ## 10. Hinweis zur Genehmigungslage
 
-Laut KV Baden-Württemberg gab es bei den Genehmigungen für Radiologinnen und Radiologen anfangs Verzögerungen. Die KV-Genehmigung der Radiologie Dammtor (Erstbefundung) und des AK Harburg (Zweitbefundung) auf der Zuweiserseite bitte konkret benennen.
+Laut KV Baden-Württemberg gab es bei den Genehmigungen für Radiologinnen und Radiologen anfangs Verzögerungen. Die KV-Genehmigung der Radiologie Dammtor (Erstbefundung) und des Asklepios Klinikum Harburg (Zweitbefundung) auf der Zuweiserseite bitte konkret benennen.
 
 Quelle: [KVBW](https://www.kvbawue.de/praxis/aktuelles/nachrichten-zum-praxisalltag/news-artikel/lungenkrebs-screening-verzoegerungen-bei-genehmigung-fuer-radiologen)
 
@@ -90,3 +90,9 @@ Die PDF ist **eine einzige Rastergrafik** (3369 × 2382 px, ca. 290 dpi auf A4 q
 - Das Format ist genau A4 **ohne Beschnittzugabe**. Für den Druck beim Dienstleister in der Regel 3 mm Beschnitt erforderlich.
 - **Empfehlung:** aus dem Layoutprogramm neu als PDF mit Live-Text exportieren (PDF/UA oder zumindest getaggt, Sprache Deutsch, sinnvoller Titel, bedingte Trennstriche), für den Druck separat mit Beschnitt.
 - Inhaltlich sagt der Flyer: „Ob Sie teilnehmen können, klärt **Ihre Hausarztpraxis**“. Nicht jede Hausarztpraxis hat den Fortbildungsnachweis. Für die nächste Auflage empfehle ich die Formulierung der Website.
+
+## 12. Nachtrag 05.10.2026: Bericht und neuer Flyer
+
+- **Ärztlicher Bericht** (`assets/downloads/aerztlicher-bericht-lungenkrebsscreening-radiologie-dammtor.pdf`): eigener Bogen der Radiologie Dammtor „nach dem Muster der KV Hamburg“ gemäß § 39 Nr. 1 KFE-RL, mit 21 ausfüllbaren Feldern. Alle Felder sind leer, es sind keine Patientendaten enthalten. Er ersetzt auf der Zuweiserseite den Link auf den Musterbericht der KVWL.
+- **Flyer, neue Version** (`assets/downloads/flyer-lungenkrebsscreening-hamburg.pdf`): zwei Seiten (außen/innen). Titel und Dokumentsprache sind jetzt gesetzt, die Seiten sind aber weiterhin Rastergrafiken mit Texterkennungsebene (siehe Abschnitt 11). Neu ist die Nennung des Asklepios Klinikums Harburg.
+- **Sprachregelung:** Auf allen Seiten steht „Asklepios Klinikum Harburg“ statt „AK Harburg“.

@@ -314,7 +314,8 @@ div.lks-pruefen, p.lks-pruefen, li.lks-pruefen { padding: var(--lks-space-2); }
   padding: var(--lks-space-5) var(--lks-space-4);
   display: grid; gap: var(--lks-space-4);
 }
-@media (min-width: 48rem) { .lks-contact { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 48rem) { .lks-contact { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64rem) { .lks-contact { grid-template-columns: repeat(4, 1fr); } }
 .lks-contact .lks-h2, .lks-contact .lks-kicker, .lks-contact a { color: var(--lks-white); }
 .lks-contact .lks-h2 { grid-column: 1 / -1; margin: 0; }
 .lks-contact__label { display: block; font-size: var(--lks-fs-kicker); font-weight: var(--lks-fw-bold); letter-spacing: var(--lks-tracking-caps); text-transform: uppercase; opacity: 0.9; }
@@ -529,3 +530,24 @@ body.lks { margin: 0; background: var(--lks-white); }
 .lks-swim-svg__edge-label text { font-family: var(--lks-font); font-size: 12px; font-style: italic; fill: var(--lks-taupe); }
 .lks-grid-2 > * { min-width: 0; }
 @media (max-width: 30rem) { .lks-table th, .lks-table td { padding-inline: 0.3rem; } }
+
+/* ------------------------------------------------------------ Unterlagen (Dokument-Karten) */
+.lks-docs { display: grid; gap: var(--lks-space-4); }
+@media (min-width: 64rem) { .lks-docs { grid-template-columns: 1fr 1fr; } }
+.lks-doc {
+  display: grid; gap: var(--lks-space-4);
+  grid-template-columns: 1fr;
+  padding: var(--lks-space-4); border-radius: var(--lks-radius);
+  background: var(--lks-white); border: 1px solid var(--lks-line);
+}
+@media (min-width: 36rem) { .lks-doc { grid-template-columns: 11rem 1fr; } }
+.lks-doc__thumb { display: block; align-self: start; max-width: 14rem; }
+.lks-doc__thumb img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--lks-line); border-radius: 2px;
+  box-shadow: 0 4px 14px rgba(42, 36, 33, 0.14);
+}
+.lks-doc__body .lks-h3 { margin-top: 0; }
+.lks-doc__body p { margin-bottom: var(--lks-space-2); }
+.lks-doc__meta { font-size: var(--lks-fs-small); }
+.lks-doc .lks-actions { margin-top: var(--lks-space-3); }

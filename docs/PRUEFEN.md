@@ -12,9 +12,10 @@ Alle Stellen sind im Prototyp orange gestrichelt mit „PRÜFEN“ markiert (Kla
 | 5 | Rauchfrei-Telefon (BIÖG) | ✅ eingearbeitet | 0800 8 31 31 31 |
 | 6 | Zuweiser-Kontakt | ✅ Telefon Anmeldung aus dem Flyer | ggf. später eigene Durchwahl/E-Mail |
 | 7 | Sprechzeiten bzw. telefonische Erreichbarkeit | ⏳ offen | nicht im Flyer, Website nicht erreichbar |
-| 8 | Qualitätsnachweise, KV-Genehmigungen (Dammtor und AK Harburg) | ⏳ offen | |
+| 8 | Qualitätsnachweise, KV-Genehmigungen (Dammtor und Asklepios Klinikum Harburg) | ⏳ offen | |
 | 9 | Vergleichswert zur Strahlendosis | ✅ eingearbeitet | „ein Fünftel bis ein Viertel einer üblichen Thorax-CT“ (Krebsinformationsdienst) |
-| 10 | Musterbericht, Flyer-PDF | ✅ Musterbericht verlinkt / ⏳ Flyer neu exportieren | keine „BÄK-Vorlage“ vorhanden |
+| 10 | Bericht, Flyer-PDF | ✅ eingebaut (05.10.2026) | eigener ärztlicher Bericht nach Muster der KV Hamburg (ausfüllbar) und neuer Flyer im Zuweiserbereich |
+| 10a | Bestellweg für gedruckte Flyer | ⏳ offen | im Zuweiserbereich markiert |
 | 11 | **Doppelbefundung** | ⚠️ korrigiert | Zweitbefundung nach KFE-RL nur bei auffälligem Erstbefund; bitte bestätigen, ob freiwillig alle Untersuchungen doppelt befundet werden |
 | 12 | **Alle medizinischen Texte**: fachliche Endabnahme | ⏳ offen | u. a. FAQ „Vorbereitung“, Nutzen/Risiken |
 

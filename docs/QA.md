@@ -25,6 +25,8 @@ Stand: 29.09.2026 · Prüfumgebung: lokaler Build (`public/`), `http-server` ohn
 | /lungenkrebsscreening/zuweiser/ | mobil | 99 | 100 | 100 | 100 |
 | /lungenkrebsscreening/zuweiser/ | Desktop | 100 | 100 | 100 | 100 |
 
+**Hinweis seit der Veröffentlichung als Prototyp:** Wegen `noindex` und `robots.txt` meldet Lighthouse für SEO jetzt 66 (gemessen am 05.10.2026 auf der Zuweiserseite: Performance 99, Barrierefreiheit 100, Best Practices 100). Das ist gewollt; ohne die Prototyp-Sperre lag SEO bei 100.
+
 Einzelhinweise ohne Einfluss auf das Ziel: Textkompression (gzip/brotli) und Minifizierung übernimmt der Produktionsserver bzw. die Asset-Pipeline des Themes. Im Theme-Kontext kommen dessen eigene Ressourcen hinzu, deshalb nach der Integration erneut messen.
 
 ## axe-core (WCAG 2.0/2.1 A + AA + Best Practices)

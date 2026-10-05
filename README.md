@@ -10,7 +10,7 @@ Statischer Prototyp (HTML/CSS/Vanilla-JS) der neuen Unterseite zur Lungenkrebs-F
 |---|---|
 | `/lungenkrebsscreening/` | Hub: Hero mit Leitbild, Claims, Zielgruppen-Weiche, Kurzinfo, Kontakt |
 | `/lungenkrebsscreening/patienten/` | Patientenbereich inkl. Packungsjahre-Rechner (einfach), Timeline, Nutzen/Risiken, FAQ |
-| `/lungenkrebsscreening/zuweiser/` | Zuweiserbereich inkl. Checkliste (Druck + PDF), Swimlane, Befundinhalte, Rechner (erweitert) |
+| `/lungenkrebsscreening/zuweiser/` | Zuweiserbereich inkl. ärztlichem Bericht (ausfüllbares PDF) und Flyer, Checkliste (Druck + PDF), Swimlane, Befundinhalte, Rechner (erweitert) |
 | `/` | Prototyp-Übersicht, Teaser für Startseite und `/ct-diagnostik`, Leitbild-Varianten |
 
 ## Prototyp ansehen
@@ -50,7 +50,8 @@ assets/css/tokens.css      Design-Tokens (--lks-*), einzige Stelle für Farben/T
 assets/css/lks.css         Komponenten (Klassen mit Präfix lks-)
 assets/js/packyears.js     Rechenlogik als reine Funktionen, ohne DOM-Zugriff (portierbares ES-Modul)
 assets/js/packyears-ui.js  Oberfläche des Rechners (beide Modi)
-assets/downloads/          Checkliste Zuweisung (PDF)
+assets/downloads/          Ärztlicher Bericht (ausfüllbar), Flyer, Checkliste Zuweisung (PDF)
+assets/img/                Vorschaubilder der Downloads
 src/partials/              Bausteine (entsprechen späteren Twig-Partials)
 src/pages/                 Seiten
 test/                      Unit-Tests
