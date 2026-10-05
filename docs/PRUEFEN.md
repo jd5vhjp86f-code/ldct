@@ -7,8 +7,7 @@ Alle Stellen sind im Prototyp orange gestrichelt mit „PRÜFEN“ markiert (Kla
 | 1 | Formulierung zur Zuweisungsberechtigung | ✅ recherchiert, eingearbeitet | siehe `RECHERCHE.md` Abschnitt 2 |
 | 2 | EBM 01875 / 01876, extrabudgetär, Stand-Datum | ✅ eingearbeitet (Stand 29.09.2026) | bundeseinheitlich; keine KVH-Abweichung gefunden |
 | 3 | Befundlaufzeit und Übermittlungsweg | ✅ eingearbeitet (05.10.2026) | 14 Tage inkl. Zweitbefundung; elektronisch oder postalisch an Patient und Zuweiser |
-| 4 | Kosten PKV | ✅ eingearbeitet | tarifabhängig |
-| 4a | Selbstzahler-Angebot und Preis | ⏳ offen | Text eingearbeitet, nur „Kosten vorab nennen“ markiert; Abrechnungsempfehlung siehe `RECHERCHE.md` Abschnitt 13 |
+| 4 | Privat Versicherte und Selbstzahlende | ✅ entschieden (05.10.2026) | nur allgemeiner Hinweis, dass sie teilnehmen können; keine Preise |
 | 5 | Rauchfrei-Telefon (BIÖG) | ✅ eingearbeitet | 0800 8 31 31 31 |
 | 6 | Zuweiser-Kontakt | ✅ Telefon Anmeldung aus dem Flyer | ggf. später eigene Durchwahl/E-Mail |
 | 7 | Telefonische Erreichbarkeit | ✅ eingearbeitet (05.10.2026) | 9–17 Uhr |
