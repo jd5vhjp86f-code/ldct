@@ -551,3 +551,28 @@ body.lks { margin: 0; background: var(--lks-white); }
 .lks-doc__body p { margin-bottom: var(--lks-space-2); }
 .lks-doc__meta { font-size: var(--lks-fs-small); }
 .lks-doc .lks-actions { margin-top: var(--lks-space-3); }
+
+/* Hero-Headline: lange Wörter („Lungenkrebsscreening“, „Zuweisende“) nie trennen.
+   Die Schriftgröße richtet sich nach der Breite der Textspalte, sodass das längste
+   Wort auch bei 320 px in eine Zeile passt. */
+.lks-hero .lks-container > div:first-child { container-type: inline-size; min-width: 0; }
+.lks-hero .lks-h1 {
+  font-size: min(var(--lks-fs-h1), 6.8cqi); /* ca. 8 % Reserve für andere Schriftmetriken */
+  hyphens: none;
+  -webkit-hyphens: none;
+  overflow-wrap: normal;
+}
+/* sehr schmale Displays (320 px) */
+.lks-docs > *, .lks-doc > * { min-width: 0; }
+.lks-doc { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 36rem) { .lks-doc { grid-template-columns: 11rem minmax(0, 1fr); } }
+@media (max-width: 24rem) {
+  .lks-table { table-layout: fixed; }
+  .lks-table th:first-child, .lks-table td:first-child { width: 3.4rem; }
+  .lks-table th:last-child, .lks-table td:last-child { width: 5.6rem; }
+  .lks-table td { overflow-wrap: anywhere; }
+}
+.lks-swim__list li { grid-template-columns: auto minmax(0, 1fr); }
+.lks-calc { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 60rem) { .lks-calc { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); } }
+.lks-phase { grid-template-columns: repeat(auto-fit, minmax(min(7.5rem, 100%), 1fr)); }

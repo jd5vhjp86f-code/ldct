@@ -35,7 +35,7 @@ Nach der Recherche-Überarbeitung erneut geprüft. Geprüft wurden alle vier Sei
 
 ## Mobil 360 px
 
-Kein horizontales Scrollen (`scrollWidth` = 360 auf allen Seiten). Die Timeline läuft vertikal, die Swimlane wird zur nummerierten Liste mit farbiger Bahnkennzeichnung.
+Kein horizontales Scrollen (`scrollWidth` = 360 auf allen Seiten, seit 05.10.2026 auch bei 320 px geprüft). Die Hero-Überschriften („Lungenkrebsscreening“, „Zuweisende“) werden nicht getrennt; ihre Schriftgröße passt sich der Spaltenbreite an (geprüft von 320 bis 1600 px). Die Timeline läuft vertikal, die Swimlane wird zur nummerierten Liste mit farbiger Bahnkennzeichnung.
 
 ## Druckansicht Checkliste
 
