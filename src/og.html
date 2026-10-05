@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/lks.css">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  .og { position: relative; width: 1200px; height: 630px; display: grid; grid-template-columns: minmax(0, 1fr) 400px; column-gap: 20px; align-items: center;
+        background: var(--lks-blue); color: #fff; padding: 0 40px 0 80px; box-sizing: border-box; }
+  .og .lks-kicker { color: #fff; font-size: 22px; margin-bottom: 18px; }
+  .og h1 { overflow-wrap: normal; hyphens: none; font-size: 46px; font-weight: 300; line-height: 1.08; text-transform: uppercase; margin: 0 0 30px; letter-spacing: .01em; }
+  .og h1 b { font-weight: 700; }
+  .og ul { list-style: none; margin: 0; padding: 0; font-size: 26px; font-weight: 700; display: grid; gap: 10px; }
+  .og li { display: flex; align-items: center; gap: 16px; }
+  .og li::before { content: ""; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+  .og .art svg { width: 400px; height: 400px; display: block; overflow: visible; }
+  .og .brand { position: absolute; left: 80px; bottom: 40px; font-size: 18px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .lks-lung__ring { animation: none !important; }
+</style>
+</head>
+<body class="lks">
+<div class="og lks-on-dark">
+  <div>
+    <span class="lks-kicker">Radiologie Dammtor</span>
+    <h1>Lungenkrebsscreening<br><b>in Hamburg</b></h1>
+    <ul><li>Früh erkennen.</li><li>Unkompliziert untersuchen.</li><li>Gemeinsam behandeln.</li></ul>
+  </div>
+  <div class="art"><!-- @include lung-hero --></div>
+  <div class="brand">Niedrigdosis-CT · Kassenleistung · radiologie-dammtor.de</div>
+</div>
+</body>
+</html>

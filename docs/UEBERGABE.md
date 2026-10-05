@@ -1,5 +1,7 @@
 # Übergabe an die Theme-Agentur
 
+Kurzfassung für die Agentur: `docs/Briefing-Webagentur-Lungenkrebsscreening.pdf`. Dieses Dokument enthält die technischen Details.
+
 ## 1. Ausgangslage
 
 Weder auf das Theme-Repository noch auf die Live-Website bestand Zugriff (die Netzwerkrichtlinie der Build-Umgebung hat `radiologie-dammtor.de` blockiert). Deshalb ist der Prototyp eigenständig gebaut. Er ist so aufgebaut, dass er sich 1:1 in OctoberCMS-Pages und Twig-Partials überführen lässt.
@@ -33,7 +35,10 @@ Hinweise:
 
 - **Navigation:** Leistungen → Lungenkrebsscreening (neben CT-Diagnostik). Den Teaser (`partials/teaser.html`) auf der Startseite und auf `/ct-diagnostik` einbinden.
 - **JSON-LD** (`MedicalWebPage`, `BreadcrumbList`) steht im `<head>` jeder Seite und muss mit übernommen werden.
-- **OG-Bild** `/assets/og/lungenkrebsscreening.png` (1200 × 630) muss noch erstellt werden, am besten aus `assets/svg/lung-hero.svg` mit Headline.
+- **OG-Bild** liegt unter `assets/og/lungenkrebsscreening.png` (1200 × 630, erzeugt mit `node tools/make-og.mjs` aus `src/og.html`). Im `<head>` ist es unter `https://www.radiologie-dammtor.de/themes/ohjunge/assets/lks/og/lungenkrebsscreening.png` referenziert.
+- **Produktionsfassung:** `node tools/build.mjs --agentur` schreibt nach `dist/agentur/`: nur Inhaltsbereich (Kopf und Fuß aus dem Theme-Layout), ohne `noindex`/`robots.txt`, feste URLs (`/lungenkrebsscreening…`) und alle Assets unter `themes/ohjunge/assets/lks/`. Das Teaser-Snippet liegt unter `snippets/`.
+- **Downloads:** ärztlicher Bericht (ausfüllbar, nach Muster der KV Hamburg), Flyer und Checkliste liegen unter `assets/downloads/`.
+- **Doctolib** ist nur verlinkt, nicht eingebettet.
 - **Checkliste drucken:** Der Button setzt `body.lks-print-checklist`. Dafür muss `#checkliste` ein **direktes Kind von `<main>`** sein.
 - Der **Rechner** arbeitet ohne Abhängigkeiten, es genügt `<script type="module" src="…/packyears-ui.js">`. Er sendet und speichert nichts. Kein Tracking-Skript darf sich an seine Eingabefelder hängen.
 - Klassen `lks-proto-*` und `lks-pruefen` gehören nur zum Prototyp und entfallen in der Produktion.

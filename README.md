@@ -39,6 +39,9 @@ node tools/build.mjs     # setzt src/ + assets/ zu public/ zusammen
 npm run serve            # http://localhost:8080 (Ordner public/ lokal ausliefern)
 node tools/contrast.mjs  # WCAG-Kontraste der Token-Kombinationen
 node tools/make-pdf.mjs  # Checkliste-PDF neu erzeugen (Playwright, Server muss laufen)
+node tools/make-og.mjs   # Open-Graph-Bild neu erzeugen (Playwright)
+node tools/build.mjs --agentur  # Produktionsfassung für die Agentur nach dist/agentur/
+node tools/make-briefing.mjs    # Briefing-PDF für die Agentur neu erzeugen
 ```
 
 `public/` ist das Build-Ergebnis und wird mit eingecheckt, damit die Agentur den Prototyp ohne Node öffnen kann.

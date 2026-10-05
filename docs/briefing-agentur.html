@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Briefing Webagentur – Unterseite Lungenkrebsscreening</title>
+<style>
+  @page { size: A4; margin: 18mm 18mm 20mm; }
+  :root { --blue: #007ba9; --petrol: #007478; --taupe: #5f524a; --sand: #ebeae5; --line: #cfcac1; }
+  body { font: 10.5pt/1.5 "Helvetica Neue", Arial, "Liberation Sans", sans-serif; color: var(--taupe); margin: 0; }
+  h1 { font-weight: 300; text-transform: uppercase; font-size: 22pt; line-height: 1.15; margin: 0 0 4pt; color: var(--taupe); }
+  h1 b { color: var(--blue); font-weight: 400; }
+  .kicker { font-size: 8.5pt; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--petrol); margin: 0 0 6pt; }
+  .meta { font-size: 9pt; margin: 0 0 14pt; }
+  h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: .06em; color: var(--blue); margin: 16pt 0 6pt; break-after: avoid; }
+  p { margin: 0 0 6pt; }
+  ul, ol { margin: 0 0 6pt; padding-left: 16pt; }
+  li { margin-bottom: 3pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin: 4pt 0 8pt; }
+  th, td { text-align: left; vertical-align: top; padding: 4pt 6pt; border-bottom: 1px solid var(--line); }
+  th { font-weight: 700; }
+  code { font: 9pt ui-monospace, Menlo, Consolas, monospace; background: var(--sand); padding: 0 2pt; border-radius: 2pt; }
+  .box { background: var(--sand); padding: 8pt 10pt; border-left: 4px solid var(--petrol); margin: 8pt 0; break-inside: avoid; }
+  a { color: var(--blue); }
+  .small { font-size: 8.5pt; }
+</style>
+</head>
+<body>
+<p class="kicker">Radiologie Dammtor · Übergabe an die Webagentur</p>
+<h1>Unterseite Lungenkrebsscreening <b>für radiologie-dammtor.de</b></h1>
+<p class="meta">Stand: 05.10.2026 · Auftraggeber und Ansprechpartner: Dr. med. Benedikt Rosenbaum, MBA</p>
+
+<div class="box">
+  <p><strong>Ziel:</strong> drei neue Seiten zur Lungenkrebs-Früherkennung mit Niedrigdosis-CT (LuKrFrühErkV / KFE-RL) im bestehenden OctoberCMS-Theme <code>ohjunge</code> veröffentlichen, dazu ein Teaser auf der Startseite und auf <code>/ct-diagnostik</code>.</p>
+  <p><strong>Vorschau:</strong> <a href="https://ldct.rosenbaum.hamburg/lungenkrebsscreening/">ldct.rosenbaum.hamburg/lungenkrebsscreening/</a> (Prototyp, für Suchmaschinen gesperrt)<br>
+  <strong>Quellcode:</strong> <a href="https://github.com/jd5vhjp86f-code/ldct">github.com/jd5vhjp86f-code/ldct</a></p>
+  <p style="margin:0"><strong>Inhalte:</strong> fachlich freigegeben. Texte bitte unverändert übernehmen; Änderungen nur nach Rücksprache.</p>
+</div>
+
+<h2>1. Seiten und Navigation</h2>
+<table>
+  <tr><th>URL</th><th>Inhalt</th></tr>
+  <tr><td><code>/lungenkrebsscreening</code></td><td>Einstieg: Hero mit Lungen-Symbol, Weiche Patienten / Ärzte, Kurzinfo, Kontakt</td></tr>
+  <tr><td><code>/lungenkrebsscreening/patienten</code></td><td>Voraussetzungen, Packungsjahre-Rechner, Ablauf, Nutzen und Risiken, Rauchstopp, FAQ, Kontakt</td></tr>
+  <tr><td><code>/lungenkrebsscreening/zuweiser</code></td><td>Zuweisungsberechtigung, ärztlicher Bericht und Flyer (PDF), Checkliste, Abrechnung, Ablauf, Befund, erweiterter Rechner, Downloads</td></tr>
+</table>
+<p>Menü: <strong>Leistungen → Lungenkrebsscreening</strong> (neben CT-Diagnostik). Teaser aus <code>snippets/teaser-startseite-ct-diagnostik.html</code> auf der Startseite und auf <code>/ct-diagnostik</code> einbinden. In den Brotkrumen „Leistungen“ bitte auf die bestehende Leistungsseite verlinken (im Prototyp <code>#</code>).</p>
+
+<h2>2. Lieferumfang</h2>
+<table>
+  <tr><th>Ordner</th><th>Inhalt</th></tr>
+  <tr><td><code>01_Einbaufertig/</code></td><td>Produktionsfassung: drei Seiten (nur Inhaltsbereich, Kopf und Fuß kommen aus dem Theme-Layout), Teaser-Snippet und alle Assets bereits in der Zielstruktur <code>themes/ohjunge/assets/lks/</code> (CSS, JS, Bilder, SVG, PDFs, Open-Graph-Bild). Pfade sind absolut gesetzt.</td></tr>
+  <tr><td><code>02_Quellcode/</code></td><td>Partials und Seiten als Vorlage für Twig, Rechenlogik mit Unit-Tests, Build-Skripte, technische Übergabedoku <code>docs/UEBERGABE.md</code> und QA-Protokoll</td></tr>
+  <tr><td><code>03_Screenshots/</code></td><td>Referenz-Screenshots Desktop (1280 px) und Mobil (360 px)</td></tr>
+</table>
+
+<h2>3. Einbau in OctoberCMS</h2>
+<ol>
+  <li>Ordner <code>01_Einbaufertig/themes/ohjunge/assets/lks/</code> ins Theme kopieren.</li>
+  <li>Drei Pages anlegen; Inhalt jeweils = alles zwischen <code>&lt;main id="inhalt"&gt;</code> und <code>&lt;/main&gt;</code> plus das <code>&lt;script type="module"&gt;</code> am Ende. Optional die Bausteine aus <code>02_Quellcode/src/partials/</code> als Twig-Partials anlegen (Zuordnung in <code>docs/UEBERGABE.md</code>, Abschnitt 3).</li>
+  <li>Aus dem <code>&lt;head&gt;</code> übernehmen: Title, Description, Canonical, Open Graph und das JSON-LD (<code>MedicalWebPage</code>, <code>BreadcrumbList</code>). Die beiden Stylesheets nur auf diesen Seiten laden (<code>{% put styles %}</code>).</li>
+  <li>Schrift: <code>--theme-font</code> in <code>tokens.css</code> auf die im Theme geladene Schrift setzen. Bitte keine zusätzliche Schrift nachladen.</li>
+  <li>Farben: Die Werte in <code>tokens.css</code> sind am Praxis-Flyer gemessen; mit Theme und Logo abgleichen und nur dort anpassen. Textkontraste mindestens 4,5:1 (<code>node tools/contrast.mjs</code>).</li>
+  <li>Menüpunkt und Teaser einbinden (siehe Abschnitt 1).</li>
+  <li>Abnahme nach Abschnitt 5, dann live schalten.</li>
+</ol>
+
+<h2>4. Bitte beachten</h2>
+<ul>
+  <li><strong>Datenschutz:</strong> Der Packungsjahre-Rechner rechnet ausschließlich im Browser, speichert und sendet nichts. Kein Tracking-, Analyse- oder Heatmap-Skript darf Eingaben dieser Formulare erfassen. Doctolib ist nur verlinkt, nicht eingebunden; es entstehen keine neuen Cookies oder Drittanbieter auf der Seite.</li>
+  <li><strong>Barrierefreiheit:</strong> Überschriftenhierarchie, Labels, <code>aria-live</code>-Ergebnis, Tastaturbedienung und sichtbarer Fokus sind umgesetzt (WCAG 2.1 AA) und sollen erhalten bleiben.</li>
+  <li><strong>Silbentrennung:</strong> In Überschriften bewusst abgeschaltet; Fließtext wird nur auf schmalen Bildschirmen und nur bei langen Wörtern getrennt. Bitte nicht durch globale Theme-Regeln (<code>hyphens: auto</code>) überschreiben.</li>
+  <li><strong>Checkliste drucken:</strong> funktioniert nur, wenn <code>#checkliste</code> ein direktes Kind von <code>&lt;main&gt;</code> ist.</li>
+  <li><strong>Prototyp-Reste:</strong> In der Produktionsfassung sind <code>noindex</code>, <code>robots.txt</code>, Prototyp-Kopfzeile und -Fuß bereits entfernt. Die Seiten sollen indexiert werden.</li>
+  <li><strong>Animation:</strong> Die Ringe im Lungen-Symbol pulsieren nur, wenn der Nutzer keine reduzierte Bewegung eingestellt hat.</li>
+</ul>
+
+<h2>5. Abnahmekriterien</h2>
+<ul>
+  <li>Lighthouse ≥ 90 in allen Kategorien (mobil und Desktop), axe ohne Fehler</li>
+  <li>360 px und 320 px Breite ohne horizontales Scrollen; Hero-Überschrift „Lungenkrebsscreening“ ungetrennt</li>
+  <li>Rechner: 10 Zigaretten × 30 Jahre = 15,0 Packungsjahre; Zuweiser-Modus mit zwei Phasen (1985–1995 à 20, 2011–2026 à 10, 61 Jahre, aktiv; im Jahr 2026 getestet) = 17,5 und „Kopieren“ funktioniert</li>
+  <li>Alle Downloads (ärztlicher Bericht, Flyer, Checkliste) und externen Links öffnen; „Checkliste drucken“ druckt eine Seite</li>
+  <li>Open-Graph-Vorschau unter <code>/themes/ohjunge/assets/lks/og/lungenkrebsscreening.png</code> erreichbar</li>
+</ul>
+
+<div style="break-inside: avoid">
+<h2>6. Bei der Gelegenheit (optional, bitte prüfen)</h2>
+<p class="small">Hinweise zur bestehenden Website aus der Projektplanung, von uns nicht erneut geprüft:</p>
+<ul class="small">
+  <li>Footer: MRT/CT-Telefon 040 3500485-0, an anderen Stellen 040 3500484-0 – vermutlich Zahlendreher.</li>
+  <li>Tippfehler: „Radiolgie Walddörfer“ (2×), „Dr. med.Benedikt“ (Leerzeichen), im MRT-Teaser der Startseite „dass“ statt „das“ und „Köperinneren“.</li>
+</ul>
+</div>
+</body>
+</html>
