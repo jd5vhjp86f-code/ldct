@@ -6,13 +6,13 @@ Alle Stellen sind im Prototyp orange gestrichelt mit „PRÜFEN“ markiert (Kla
 |---|---|---|---|
 | 1 | Formulierung zur Zuweisungsberechtigung | ✅ recherchiert, eingearbeitet | siehe `RECHERCHE.md` Abschnitt 2 |
 | 2 | EBM 01875 / 01876, extrabudgetär, Stand-Datum | ✅ eingearbeitet (Stand 29.09.2026) | bundeseinheitlich; keine KVH-Abweichung gefunden |
-| 3 | Befundlaufzeit und Übermittlungsweg | ⏳ offen | praxisintern festzulegen (z. B. KIM, Fax, Post) |
+| 3 | Befundlaufzeit und Übermittlungsweg | ✅ eingearbeitet (05.10.2026) | 14 Tage inkl. Zweitbefundung; elektronisch oder postalisch an Patient und Zuweiser |
 | 4 | Kosten PKV | ✅ eingearbeitet | tarifabhängig |
-| 4a | Selbstzahler-Angebot und Preis | ⏳ offen | Entscheidung der Praxis |
+| 4a | Selbstzahler-Angebot und Preis | ⏳ offen | Text eingearbeitet, nur „Kosten vorab nennen“ markiert; Abrechnungsempfehlung siehe `RECHERCHE.md` Abschnitt 13 |
 | 5 | Rauchfrei-Telefon (BIÖG) | ✅ eingearbeitet | 0800 8 31 31 31 |
 | 6 | Zuweiser-Kontakt | ✅ Telefon Anmeldung aus dem Flyer | ggf. später eigene Durchwahl/E-Mail |
 | 7 | Telefonische Erreichbarkeit | ✅ eingearbeitet (05.10.2026) | 9–17 Uhr |
-| 8 | Qualitätsnachweise, KV-Genehmigungen (Dammtor und Asklepios Klinikum Harburg) | ⏳ offen | |
+| 8 | Qualitätsnachweise, KV-Genehmigungen | ✅ entschieden (05.10.2026) | werden nicht veröffentlicht; keine Veröffentlichungspflicht |
 | 9 | Vergleichswert zur Strahlendosis | ✅ eingearbeitet | „ein Fünftel bis ein Viertel einer üblichen Thorax-CT“ (Krebsinformationsdienst) |
 | 10 | Bericht, Flyer-PDF | ✅ eingebaut (05.10.2026) | eigener ärztlicher Bericht nach Muster der KV Hamburg (ausfüllbar) und neuer Flyer im Zuweiserbereich |
 | 11 | **Doppelbefundung** | ⚠️ korrigiert | Zweitbefundung nach KFE-RL nur bei auffälligem Erstbefund; bitte bestätigen, ob freiwillig alle Untersuchungen doppelt befundet werden |

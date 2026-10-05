@@ -576,3 +576,8 @@ body.lks { margin: 0; background: var(--lks-white); }
 .lks-calc { grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 60rem) { .lks-calc { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); } }
 .lks-phase { grid-template-columns: repeat(auto-fit, minmax(min(7.5rem, 100%), 1fr)); }
+
+/* Kooperationszeile (Hub): ab 832 px in einer Zeile, auf dem Handy ausgewogen umbrochen */
+.lks .lks-coop { max-width: none; }
+.lks-coop span { text-wrap: balance; hyphens: none; -webkit-hyphens: none; }
+@media (min-width: 52rem) { .lks-coop span { white-space: nowrap; } }

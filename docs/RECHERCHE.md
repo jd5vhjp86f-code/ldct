@@ -96,3 +96,25 @@ Die PDF ist **eine einzige Rastergrafik** (3369 × 2382 px, ca. 290 dpi auf A4 q
 - **Ärztlicher Bericht** (`assets/downloads/aerztlicher-bericht-lungenkrebsscreening-radiologie-dammtor.pdf`): eigener Bogen der Radiologie Dammtor „nach dem Muster der KV Hamburg“ gemäß § 39 Nr. 1 KFE-RL, mit 21 ausfüllbaren Feldern. Alle Felder sind leer, es sind keine Patientendaten enthalten. Er ersetzt auf der Zuweiserseite den Link auf den Musterbericht der KVWL.
 - **Flyer, neue Version** (`assets/downloads/flyer-lungenkrebsscreening-hamburg.pdf`): zwei Seiten (außen/innen). Titel und Dokumentsprache sind jetzt gesetzt, die Seiten sind aber weiterhin Rastergrafiken mit Texterkennungsebene (siehe Abschnitt 11). Neu ist die Nennung des Asklepios Klinikums Harburg.
 - **Sprachregelung:** Auf allen Seiten steht „Asklepios Klinikum Harburg“ statt „AK Harburg“.
+
+## 13. Selbstzahlende und Privatversicherte: Abrechnung nach GOÄ
+
+**Voraussetzungen:** Die LuKrFrühErkV gilt unabhängig davon, wer zahlt. Früherkennung mit Röntgenstrahlung ist nur zulässig, soweit eine Verordnung nach § 84 Abs. 2 StrlSchG sie erlaubt. Auch Selbstzahlende müssen also die Einschlusskriterien erfüllen und brauchen die ärztliche Beratung mit Bericht; eine „Screening-CT auf Wunsch“ außerhalb der Kriterien ist nicht zulässig.
+
+**Gemeinsame Abrechnungsempfehlung von BÄK, PKV-Verband und Beihilfeträgern** (Auszug laut Suchergebnis; Primärquelle: [PKV-Verband (PDF)](https://www.pkv.de/fileadmin/user_upload/PKV/3_PDFs/GOAE-GOZ/Abrechnungsempfehlung_Lungenkrebs-Fr%C3%BCherkennung.pdf), [BÄK-Meldung](https://www.bundesaerztekammer.de/presse/aktuelles/detail/baek-pkv-und-beihilfe-vereinbaren-abrechnungsempfehlung)):
+
+- **Erstbefunder:** NDCT des Thorax inkl. computerassistierter Detektion: GOÄ 5371, ggf. + 5377; dazu ggf. 60 (konsiliarische Erörterung mit Zuweiser/Zweitbefunder), 1 (Beratung), 75 (ausführlicher Befundbericht)
+- **Zweitbefunder** (nur bei kontroll-/abklärungsbedürftigem Erstbefund): GOÄ 85 analog, 2,3-fach, ggf. + 60 und 75
+
+**Rechenbeispiel Erstbefunder** (Punktwert 5,82873 Cent, Abschnitt O bis 1,8-fach, Zuschlag 5377 nur einfach):
+
+| GOÄ | Punkte | Faktor | Betrag |
+|---|---|---|---|
+| 5371 CT Hals/Thorax | 2300 | 1,8 | 241,31 € |
+| 5377 Zuschlag computergestützte Analyse | 800 | 1,0 | 46,63 € |
+| 1 Beratung | 80 | 2,3 | 10,72 € |
+| 75 ausführlicher Befundbericht | 130 | 2,3 | 17,43 € |
+| 60 konsiliarische Erörterung (falls erbracht) | 120 | 2,3 | 16,09 € |
+| **Summe** | | | **ca. 316 € bzw. 332 € mit GOÄ 60** |
+
+Die Zweitbefundung im Asklepios Klinikum Harburg wird von dort gesondert berechnet. Ob 5377 im Einzelfall angesetzt werden kann, bitte anhand der Empfehlung im Original prüfen. Quellen zu den Punktwerten: [GOÄ 5371](https://abrechnungsstelle.com/goae/goae-5371/), [GOÄ 5377 nur einfach](https://meinebfs.de/now/up-to-date-mehrfachberechnung-goae-5377/).
